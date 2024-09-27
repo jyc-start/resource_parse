@@ -1,16 +1,16 @@
-declare module './index' {
-  export function parseResource(urlStr: string): ParseData;
+// index.d.ts
 
-  export class ParseData {
-    scheme: string;
-    addrs: string[];
-    user: string | null;
-    password: string | null;
-    uri: string;
-    params: Record<string, string>;
-    getAddrInline(): string;
-  }
+// 根据 `parseResource` 的实际实现定义它的类型
+declare function parseResource(input: string): any; // 根据实际返回类型进行调整
 
-  export function decrypt(data: string): string; // 假设 decrypt 函数的返回类型是 string
-  export function encrypt(data: string): string; // 假设 encrypt 函数的返回类型是 string
+// 根据 `ParseData` 类的实现定义它的类型
+declare class ParseData {
+  constructor(data: any);
+  // 根据类的实际方法和属性定义类型
 }
+
+// `decrypt` 和 `encrypt` 函数的类型
+declare function decrypt(data: string): string;
+declare function encrypt(data: string): string;
+
+export { parseResource, ParseData, decrypt, encrypt };
