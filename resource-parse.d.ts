@@ -1,5 +1,5 @@
 declare module 'resource-parse' {
-  export function parseResource(urlStr: string， key: string): ParseData;
+  export function parseResource(urlStr: string, key: string): ParseData;
 
   export class ParseData {
     scheme: string;
