@@ -1,7 +1,7 @@
 // index.d.ts
 
 // 根据 `parseResource` 的实际实现定义它的类型
-declare function parseResource(input: string, key: string): any; // 根据实际返回类型进行调整
+declare function parseResource(input: string, key: Buffer): any; // 根据实际返回类型进行调整
 
 // 根据 `ParseData` 类的实现定义它的类型
 declare class ParseData {
