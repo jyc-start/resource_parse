@@ -1,0 +1,16 @@
+{
+  "name": "resource_parse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.1",
+    "url": "^0.11.4"
+  }
+}
