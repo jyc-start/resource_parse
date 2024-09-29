@@ -73,7 +73,7 @@ function parseResource (nowUri, key) {
       }
     }
 
-    return new ParseData(scheme, addrs, user, password, uri, params);
+    return new ParseData(scheme, addrs, user, decodeURIComponent(password), uri, params);
   } catch (error) {
     console.error(error)
     throw new Error("can not parse this format: " + error.message);
